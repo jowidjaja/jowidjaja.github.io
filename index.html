@@ -41,7 +41,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <header class="w3-display-container w3-wide" id="home">
     <div class="w3-display-left w3-padding-large">
   
-      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+     
     </div>
   </header>
 
@@ -58,8 +58,9 @@ and is wrapped around the whole page content, except for the footer in this exam
           <h5>Book Review, <span class="w3-opacity">Sep 6, 2022</span></h5>
         </div>
 
-        <div class="w3-justify">
-          <img src="images/Iger_The Ride.jpg"  style="width:20%" class="w3-padding-16">
+        <div class="container">
+          <img src="images/Iger_The Ride.jpg" style="width:30%" ALIGN="left" class="w3-padding">
+          <div class="text">
           <p>I wrote a fantastic, somewhat lengthy review and accidentally swiped down on the GoodReads app. It happened to delete everything I wrote with no remorse. So I begin again.</p.>
           <p>Bob Iger, CEO of Disney enterprises began his journey in 2005, just at the beginnings of my childhood. I didn’t realize the immense influence he wielded on everything that I loved as a kid. 
                 I believe it was a twist of fate (similar to which he references) that allowed me to read this book at this time in my life. It was the right book in the right time. 
@@ -74,78 +75,38 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p>While the beginning of his book were really powerful, I believe the end, with acquisition after acquisition, was redundant and unnecessary, hence the four stars instead of five. 
                 I would rate just the first three-fifths of the book five stars if possible. Regardless, I thoroughly enjoyed reading this book and I may in fact read it again. 
                 I laughed, nearly cried, and felt the elements of hope, creativity, and passion that has defined the Disney legend for decades.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
-          <p class="w3-clear"></p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-            <hr>
-              <div class="w3-col l2 m3">
-                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>George <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
-                <p>Great blog post! Following</p>
-              </div>
           </div>
         </div>
+          <hr>
       </div>
       <hr>
 
       <!-- Blog entry -->
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
-          <h3>TITLE HEADING</h3>
-          <h5>Title description, <span class="w3-opacity">April 23, 2016</span></h5>
+          <h3>The Upside of Stress</h3>
+          <h5>Book Review, <span class="w3-opacity">Aug 11, 2022</span></h5>
         </div>
 
         <div class="w3-justify">
-          <img src="/w3images/man_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
-          <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
-          <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
-          <p class="w3-clear"></p>
-          
-          <!-- Example of comment field -->
-          <div id="demo2" style="display:none">
-            <div class="w3-row">
-              <hr>
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl_train.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
-                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-              </div>
-            </div>
-            <div class="w3-row w3-margin-bottom">
-              <div class="w3-col l2 m3">
-                <img src="/w3images/girl.jpg" style="width:90px;">
-              </div>
-              <div class="w3-col l10 m9">
-                <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
-                <p>Love hats!!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>TITLE HEADING</h3>
-          <h5>Title description, <span class="w3-opacity">April 7, 2016</span></h5>
-        </div>
-
-        <div class="w3-justify">
-          <img src="/w3images/runway.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
-          <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>
-          <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
-          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <img src="images/McGonigal_TheUpside.jpg" alt="The Upside of Stress" style="width:40%" class="w3-padding" ALIGN="right">
+          <p>In preparation for what is suppose to be the hardest semester of undergraduate year, I took it upon myself to discover what the academic world had to say about stress. In previous years, I found that my approach to stress has usually taken the form of escapism and self-destructive habits. I was searching for not just better coping mechanisms, but also hope. 
+            I already knew what I was in for. I mean, come on, the book title kind of says it all. Stress can be good. But I still felt the need to be convinced. I thought the book would be wildly scientific, and while it did contain the logos, I was surprised by the amount of anecdotal evidence provided which made the book very enjoyable. 
+            What I found even more surprising was that this book was not at all to argue that stress is good, but harkened towards the positive impact a mindset shift could have. While reading, I felt as though I was becoming more enlightened, not in my conscious, but in my subconscious which is often times the hardest to convince.  I remember thinking that this book defines the difference between intelligence and wisdom. Researchers utilized intelligence to define stress as bad, harmful, toxic, and dangerous. And perhaps this was just as that is what their studies demonstrated. But it seemed as though the researchers could not see the bigger picture which is where wisdom comes in play. How does one share this information with the public? How does these animal studies relate to human experiences? Are there elements of stress that come in different forms and thus can not be compared in that way? Anyone can look at a mouse model and call stress bad, shaming humanity for something they cannot prevent. Any reporter can use terrifying headlines about how stress causes health issues. But wisdom tells us what is true in a scale more wholistic and true than anything simple intellectual rationality can provide. And by the fruits of the intelligent versus the wise, we can see what is truly best for humanity. One leaves an individual in a state of panic (one that I have visited myself) and shame while the other encourages growth and resilience. 
+           </p>
+           <p>Anyways, some of my favorite bits are not necessarily revelations, but a phrase that simplifies my own thoughts into something much more digestible. McGonigal writes, "a stressful life is often a meaningful life; stress challenges us to find the meaning in our lives" (67). I am so thankful for this sentence as it has protected me against a futile battle against stress through escapism which is summed up quite nicely by the quote by Richard Ryan, Veronika Huta, and Edward Deci, "The more directly one aims to maximize pleasure and avoid pain, the more likely one is to produce instead a life bereft of depth, meaning, and community" (McGonigal 84). I will also say, that I believe my own experiences have pointed to the true-ness of this statement. This past semester, studying organic chemistry had caused me to battle with myself, my insecurities, and even my faith. But that experience also made me resilient and more amazed at how God works within my life. 
+            Another interesting way McGonigal frames difficult moments is in the context of something greater. Like a hiker suffers the death zone to reach the summit of Mount Everest, we can also embrace difficulty if we remember the larger picture. Thus, analogy this very beautifully helps one understand the importance of values and "greater than" goals in one's life. Also, just as beautiful are the statements she introduces to the reader that can replace the complaints the inner critic normally makes. "May we all know our own strength" (170) is such a heartfelt and empathetic statement to say to yourself. It is a kudos to the bravery of others while recognizing that fire of hope within yourself. It is empowering and yet not ignorant of the suffering at hand. 
+           </p>
+           <p> For the most part, I found the philosophy of this book align with the one I currently hold for myself. I say this as McGonigal references that mindsets are "not black-and-white truths about the world" (220) which is something I fervently agree with. There are a few bits that I don't necesarrily take issue with, but I feel as though it is an overextension of her argument about stress. However, I will implement them into my life to see if it really does make a difference.
+            One part that was a really unique perspective was the discussion of if good was a result of trauma. Her response states that the growth and good are not belongings of the trauma, but are a result of you - "your strengths, your values, and how you choose to respond to adversity" (201). While I don't necessarily agree that the good is purely human as I see it more in the spiritual lens, I think this is a really good way to explain the precarious relationships between struggle and positive growth. 
+            I began this book with a mindset towards stress that was isolating and honestly quite depressing as I felt inadequate. In her book, she references interventions given to students and the fruits of these interventions regardless if they remembered the content. Reading this book gave me hope that I too can begin to embrace stress rather than fear it. 
+            </p>
+            <p></p>
+            <p>May We All Know Our Own Strength,</p>
+            
+            <p>
+            Josephine Widjaja</p>
+         
           <p class="w3-clear"></p>
           
           <!-- Example of comment field -->
@@ -189,10 +150,12 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-col l4">
       <!-- About Card -->
       <div class="w3-white w3-margin">
-        <img src="/w3images/avatar_girl2.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
+        <img src="images/Widjaja1.JPG" alt="Josephine" style="width:100%">
         <div class="w3-container w3-black">
-          <h4>My Name</h4>
-          <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+          <h4>Josephine Widjaja</h4>
+          <p>Welecome to my blog! My name is Josephine and I'm a bs/dmd student at Augusta University. I spend my free time refining my rock climbing abilities, reading, and code (which is why I've been building this very website).</p>
+          <p> Though heavily interested in science, I also am fascinated with histories, passionate about writing, and invigorated with the ideas of creative thinking.</p>
+          <p> Other than being perplexed by my existence, I am a big dreamer, but also a strongly motivated and hard worker. I hope to discover my purpose and how I can best contribute to society to make my environmentally genuinally and sustainably better. Currently, I'm in pursuit of growth in my mind, body, and soul. Through my own development, I hope to inspire a passion within myself and those around me to create good in this strained world.</p>
         </div>
       </div>
       <hr>
@@ -205,106 +168,44 @@ and is wrapped around the whole page content, except for the footer in this exam
         <ul class="w3-ul w3-hoverable w3-white">
           <li class="w3-padding-16">
             <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Denim</span>
+            <span class="w3-large">Upcoming Posts</span>
             <br>
-            <span>Sed mattis nunc</span>
+            <span>pending</span>
           </li>
           <li class="w3-padding-16">
             <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Sweaters</span>
+            <span class="w3-large">Upcoming Posts</span>
             <br>
-            <span>Praes tinci sed</span>
+            <span>pending</span>
           </li>
           <li class="w3-padding-16">
             <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Workshop</span>
+            <span class="w3-large">Upcoming Posts</span>
             <br>
-            <span>Ultricies congue</span>
+            <span>pending</span>
           </li>
           <li class="w3-padding-16">
             <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
-            <span class="w3-large">Trends</span>
+            <span class="w3-large">Upcoming Posts</span>
             <br>
-            <span>Lorem ipsum dipsum</span>
+            <span>Pending</span>
           </li>
         </ul>
       </div>
       <hr>
 
-      <!-- Advertising -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Advertise</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
-            <span class="w3-display-middle">Your AD Here</span>
-          </div>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Tags -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Tags</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <p>
-            <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Norway</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
-          </p>
-        </div>
-      </div>
-      <hr>
-
-      <!-- Inspiration -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Inspiration</h4>
-        </div>
-        <div class="w3-row-padding w3-white">
-          <div class="w3-col s6">
-            <p><img src="/w3images/jeans.jpg" alt="Jeans" style="width:100%"></p>
-            <p><img src="/w3images/team1.jpg" alt="Jeans" style="width:100%"></p>
-          </div>
-          <div class="w3-col s6">
-            <p><img src="/w3images/avatar_hat.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
-            <p><img src="/w3images/team4.jpg" alt="Jeans" style="width:100%"></p>
-         </div>
-        </div>
-      </div>
-      <hr>
 
       <div class="w3-white w3-margin">
         <div class="w3-container w3-padding w3-black">
           <h4>Follow Me</h4>
         </div>
         <div class="w3-container w3-xlarge w3-padding">
-          <i class="fa fa-facebook-official w3-hover-opacity"></i>
           <i class="fa fa-instagram w3-hover-opacity"></i>
-          <i class="fa fa-snapchat w3-hover-opacity"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
           <i class="fa fa-linkedin w3-hover-opacity"></i>
         </div>
       </div>
       <hr>
       
-      <!-- Subscribe -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>Subscribe</h4>
-        </div>
-        <div class="w3-container w3-white">
-          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
-        </div>
-      </div>
 
     <!-- END About/Intro Menu -->
     </div>
