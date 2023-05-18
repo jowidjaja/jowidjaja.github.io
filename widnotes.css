@@ -13,15 +13,13 @@
 header, section, footer, aside, nav, main, article, figure, img {
   display: block;
 }
-img{
-  width:100%;
-}
+
 #wrapper{
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
   background-color: #F2F2F2;
-  font-family:calibri;
+  font-family:calibri,Arial, sans-serif;
 }
 
 
@@ -166,6 +164,26 @@ header{
   width:97%;
   margin: 10px auto;
   background-color: white;
+}
+.home_prof img{
+  width:100%;
+}
+.hbook_gallery{
+  display:flex;
+  overflow-x:scroll;
+  overflow-y:hidden;
+  
+}
+.hbook_gallery::-moz-scrollbar-button:decrement,
+::-moz-scrollbar-button:increment,
+::-webkit-scrollbar-button:decrement,
+::-webkit-scrollbar-button:increment {
+  width: 0px;
+}
+.book_img{
+  height:230px;
+  width:auto;
+  margin-right:10px;
 }
 .instagram{
   padding:20px;
