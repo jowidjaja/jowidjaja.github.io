@@ -223,4 +223,11 @@ footer a{
   .home_flex1 {
     display:block;
     }
+  .home_lcolumn{
+    width:100%;
+  }
+  .home_rcolumn{
+    width:100%
+    }
 }
+
