@@ -219,7 +219,7 @@ footer a{
 }
 
 /*RESPONSIVE DESIGN */
-@media max-width (650px){
+@media (max-width: 650px){
   .home_flex1 {
     display:block;
     }
