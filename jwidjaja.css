@@ -217,3 +217,10 @@ footer{
 footer a{
   color:#755555
 }
+
+/*RESPONSIVE DESIGN */
+@media max-width (650px){
+  .home_flex1 {
+    display:block;
+    }
+}
