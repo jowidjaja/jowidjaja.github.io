@@ -49,7 +49,16 @@ header{
   width:100%;
   margin-top:0;
   padding:15px 25px;
+  margin-bottom:20px;
 }
+.header_border{
+  height:5px;
+  width:100%;
+  background-color: #D08686;
+  margin-top:-25px;
+  margin-bottom:20px;
+}
+
 .logo a{
   color: white;
   text-decoration: none;
@@ -59,7 +68,7 @@ header{
   transition: color 0.2s ease;
 }
 .logo a:hover{
-  color:#755555;
+  color:#D08686;
   transition: color 0.2s ease;
 }
 .nav_links{
@@ -76,7 +85,7 @@ header{
   transition: color 0.2s ease;
 }
 .menu a:hover{
-  color:#755555;
+  color:#D08686;
   text-decoration:underline;
   text-underline-offset: 7px;
   transition: color 0.2s ease;
@@ -112,6 +121,9 @@ header{
   justify-content: center;
   align-items: center;
   height:250px;
+  width:97%;
+  margin-left:auto;
+  margin-right:auto;
 }
 .home_flex1{
   display:flex;
@@ -124,12 +136,22 @@ header{
   width:65%;
 }
 .home_lblock1{
-  height:350px;
+  height:fit-content;
   width:95%;
   background-color: white;
   margin: 20px auto;
   padding:20px;
 }
+
+
+.home_articles{
+  height:100%;
+  width:100%;
+  overflow-x:scroll;
+  white-space:nowrap;
+
+}
+
 .home_rcolumn{
   display:block;
   width:35%;
@@ -150,7 +172,7 @@ header{
   text-decoration: none;
   height: 20px;
   padding:5px 40px;
-  background-color: #755555;
+  background-color: #D08686;
   color:white;
 }
 .home_profcont{
@@ -159,11 +181,12 @@ header{
   padding:10px;
 }
 .home_thoughts{
-  height:300px;
+  height:400px;
   padding:20px;
   width:97%;
   margin: 10px auto;
   background-color: white;
+  overflow-y:scroll;
 }
 .home_prof img{
   width:100%;
@@ -180,12 +203,24 @@ header{
 ::-webkit-scrollbar-button:increment {
   width: 0px;
 }
+
+.home_article{
+  height:300px;
+  width:400px;
+  margin: 10px;
+  background-color:gray;
+  display:inline-block;
+  
+}
+
+
 .book_img{
   height:230px;
   width:auto;
   margin-right:10px;
+  margin-bottom:10px;
 }
-.instagram{
+.gallery{
   padding:20px;
   height:auto;
   width:97%;
@@ -199,6 +234,63 @@ header{
   margin-top:20px;
 }
 
+/*home: thoughts*/
+.thought_header1{
+  display:flex;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -3px;
+}
+.thought_header{
+  display:flex;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -3px;
+  margin-top:50px;
+}
+
+.thought_title{
+  flex-grow:0;
+  flex-shrink: 0;
+  flex-basis: content;
+  text-align: center;
+  margin-left:20px;
+  margin-right:20px;
+}
+.thought_line{
+  height:1px;
+  width:100%;
+  overflow:hidden;
+  background-color: #0D0D0D;
+  justify-content:center;
+  vertical-align: middle;
+  
+}
+.thought_date{
+  text-align: center;
+  font-size:15px;
+  font-weight: 100;
+}
+.thought_paragraph{
+  margin-top:10px;
+}
+.thought_button{
+  background-color:black;
+  height: 30px;
+  width:200px;
+  color:white;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  line-height:30px;
+  
+}
+.thought_button p{
+  
+  
+}
 
 
 /* FOOTER */
@@ -217,17 +309,3 @@ footer{
 footer a{
   color:#755555
 }
-
-/*RESPONSIVE DESIGN */
-@media (max-width: 650px){
-  .home_flex1 {
-    display:block;
-    }
-  .home_lcolumn{
-    width:100%;
-  }
-  .home_rcolumn{
-    width:100%
-    }
-}
-
