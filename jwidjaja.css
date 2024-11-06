@@ -135,22 +135,7 @@ header{
   height: fit-content;
   width:65%;
 }
-.home_lblock1{
-  height:fit-content;
-  width:95%;
-  background-color: white;
-  margin: 20px auto;
-  padding:20px;
-}
 
-
-.home_articles{
-  height:100%;
-  width:100%;
-  overflow-x:scroll;
-  white-space:nowrap;
-
-}
 
 .home_rcolumn{
   display:block;
@@ -167,6 +152,7 @@ header{
 
 .abutton{
   margin-bottom:5px;
+  
 }
 .abutton a{
   text-decoration: none;
@@ -174,6 +160,12 @@ header{
   padding:5px 40px;
   background-color: #D08686;
   color:white;
+  transition:0.5s;
+}
+.abutton a:hover{
+  background-color: white;
+  color:black;
+  transition:0.5s;
 }
 .home_profcont{
   background-color: #0D0D0D;
@@ -204,14 +196,7 @@ header{
   width: 0px;
 }
 
-.home_article{
-  height:300px;
-  width:400px;
-  margin: 10px;
-  background-color:gray;
-  display:inline-block;
-  
-}
+
 
 
 .book_img{
@@ -285,10 +270,120 @@ header{
   margin-right:auto;
   text-align: center;
   line-height:30px;
+  margin-top:20px;
+  transition:0.5s;
+}
+
+.thought_button:hover{
+  background-color: #D08686;
+  transition: 0.5s;
+}
+
+
+
+/*Home: Project Box*/
+.home_lblock1{
+  height:fit-content;
+  width:95%;
+  background-color: white;
+  margin: 20px auto;
+  padding:20px;
+}
+
+.home_articles{
+  height:340px;
+  width:100%;
+  overflow-x:scroll;
+  white-space: nowrap;
   
 }
-.thought_button p{
+
+.home_article{
+  height:300px;
+  width:400px;
+  margin: 10px;
+  background-color:gray;
+  display:inline-block;
+  overflow:hidden;
   
+
+}
+
+.home_article:hover{
+  border:solid;
+  border-color: #7f7f7f;
+
+  border-width:1px;
+
+}
+
+.project_tab{
+  /*display:flex;
+  align-items: end;*/
+  outline:2px solid yellow;
+  height:100%;
+  background-color:gray;
+  
+
+}
+
+.project_blurb{
+  background-color: white;
+  height:300px;
+  width:400px;
+  position:relative;
+  top:240px;
+  padding:10px;
+  opacity:0.8;
+  transition:1s;
+  
+}
+
+.project_blurb:hover{
+  top:0px;
+  opacity:1;
+  transition: 1.5s;
+  
+ 
+}
+
+.project_title{
+
+}
+
+.project_desc{
+  font-style:italic;
+  font-size:small;
+  
+}
+
+.project_para{
+  white-space:wrap;
+  margin-top:10px;
+}
+
+.project_link{
+  background-color: #0D0D0D;
+  color:white;
+  height:30px;
+  width:140px;
+  text-align: center;
+  line-height: 30px;
+  margin-top:20px;
+  transition:0.5s;
+}
+
+.project_link:hover{
+  background-color: #D08686;
+  transition:0.5s;
+}
+
+.project_link a{
+  color:white;
+  text-decoration:none;
+  font-family: calibri;
+  font-weight: 450;
+
   
 }
 
