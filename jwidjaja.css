@@ -15,10 +15,11 @@ header, section, footer, aside, nav, main, article, figure, img {
 }
 
 #wrapper{
-  margin-left: auto;
-  margin-right: auto;
+  margin-left:auto;
+  margin-right:auto;
+  
   margin-top: 0px;
-  background-color: #F2F2F2;
+  background-color: #ededed;
   font-family:calibri,Arial, sans-serif;
 }
 
@@ -44,22 +45,23 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0D0D0D;
+  background-color: #E8E8E8;
   height:70px;
   width:100%;
   margin-top:0;
   padding:15px 25px;
-  margin-bottom:20px;
+  margin-bottom:0px;
+  
 }
 .header_border{
   height:5px;
   width:100%;
-  background-color: #D08686;
+  background-color: #E8E8E8;
   margin-top:-25px;
   margin-bottom:20px;
 }
 .logo a{
-  color: white;
+  color: #6e6e6e;
   text-decoration: none;
   font-stretch: condensed;
   font-size: 25px;
@@ -69,6 +71,7 @@ header{
 .logo a:hover{
   color:#D08686;
   transition: color 0.2s ease;
+  
 }
 .nav_links{
   display:flex;
@@ -78,41 +81,22 @@ header{
   display:inline;
 }
 .menu a{
-  color:white;
+  color:#6e6e6e;
   text-decoration:none;
   margin-left:25px;
   transition: color 0.2s ease;
+  
 }
 .menu a:hover{
   color:#D08686;
   text-decoration:underline;
   text-underline-offset: 7px;
   transition: color 0.2s ease;
+  font-weight: 700;
 }
 
 /*HOME*/
-.home_wrapper{
-  display:block;
-  height:auto;
-  background-color: #F2F2F2;
-  padding-bottom:80px;
-}
-.home_title{
-  display:flex;
-  background-color: #FFFFFF;
-  height: 50px;
-  width:100%;
-  justify-content: center;
-  align-items: center;
-  flex-wrap:wrap;
-}
-.break{
- flex-basis: 100%;
- height: 0;
-}
-.home_header{
-  background-color:blue;
-}
+/*Home Containers*/
 .home_titlecont{
   display:flex;
   background-color: white;
@@ -122,7 +106,141 @@ header{
   width:97%;
   margin-left:auto;
   margin-right:auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px -1px gray;
 }
+
+.home_prof{
+  height:400px;
+  width:95%;
+  background-color: white;
+  margin: 20px 20px 20px 5px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px -1px gray;
+}
+
+.home_profcont{
+  background-color: #0D0D0D;
+  color:white;
+  padding:10px;
+  border-radius: 0px 0px 10px 10px;
+  position:relative;
+  top:-20px;
+  box-shadow: 1px 1px 2px -1px gray;
+}
+
+.gallery{
+  padding:20px;
+  height:auto;
+  width:97%;
+  background-color:white;
+  margin-top:20px;
+  margin-left: auto;
+  margin-right:auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px -1px gray;
+}
+
+.home_lblock1{
+  height:fit-content;
+  width:95%;
+  background-color: white;
+  margin: 20px auto;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px -1px gray;
+  
+}
+
+.home_thoughts{
+  height:400px;
+  padding:20px;
+  width:97%;
+  margin: 10px auto;
+  background-color: white;
+  overflow-y:scroll;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px -1px gray;
+}
+
+/*Other home stuff*/
+.static_txt{
+  margin-right:5px;
+}
+.dynamic_txt{
+  line-height:17px;
+  height:17px;
+  overflow:hidden;
+  margin-top:1px;
+}
+.dynamic_txt li{
+  color:#D08686;
+  list-style:none;
+  font-size:17px;
+  font-weight:800;
+  top:0;
+  position:relative;
+  animation: slide 8s steps(4) infinite;
+
+}
+
+@keyframes slide {
+  100%{
+    top:-68px;
+  }
+}
+
+.home_sheader{
+  display: inline-flex;
+}
+
+.dynamic_txt li span::after{
+  content:"";
+  position:absolute;
+  left:0;
+  height:17px;
+  width:100%;
+  border-left:2px solid #D08686;
+  animation: typing 2s steps(8) infinite;
+  background:white;
+}
+
+@keyframes typing {
+  100%{
+    left:100%;
+    margin:0 0 0 10px;
+  }
+}
+.dynamic_txt li span{
+  position:relative;
+}
+  
+.home_wrapper{
+  display:block;
+  height:auto;
+  background-color: #E8E8E8;
+  padding-bottom:80px;
+ 
+}
+.home_title{
+  display:flex;
+  background-color: #FFFFFF;
+  height: 50px;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  
+  
+}
+.break{
+ flex-basis: 100%;
+ height: 0;
+}
+.home_header{
+  background-color:blue;
+}
+
 .home_flex1{
   display:flex;
   width:100%;
@@ -136,15 +254,10 @@ header{
 .home_rcolumn{
   display:block;
   width:35%;
-  height:auto;
+  height:auto; 
+}
 
-}
-.home_prof{
-  height:400px;
-  width:95%;
-  background-color: white;
-  margin: 20px 20px 20px 5px;
-}
+
 .abutton{
   margin-bottom:5px;
 }
@@ -161,19 +274,11 @@ header{
   color:black;
   transition:0.5s;
 }
-.home_profcont{
-  background-color: #0D0D0D;
-  color:white;
-  padding:10px;
+
+.home_prof img{
+  border-radius: 10px;
 }
-.home_thoughts{
-  height:400px;
-  padding:20px;
-  width:97%;
-  margin: 10px auto;
-  background-color: white;
-  overflow-y:scroll;
-}
+
 .home_prof img{
   width:100%;
 }
@@ -194,15 +299,7 @@ header{
   margin-right:10px;
   margin-bottom:10px;
 }
-.gallery{
-  padding:20px;
-  height:auto;
-  width:97%;
-  background-color:white;
-  margin-top:20px;
-  margin-left: auto;
-  margin-right:auto;
-}
+
 .ig_widget{
   margin-top:20px;
 }
@@ -270,13 +367,6 @@ header{
 
 
 /*Home: Project Box*/
-.home_lblock1{
-  height:fit-content;
-  width:95%;
-  background-color: white;
-  margin: 20px auto;
-  padding:20px;
-}
 
 .home_articles{
   height:340px;
@@ -293,25 +383,25 @@ header{
   background-color:gray;
   display:inline-block;
   overflow:hidden;
-  
+  border-radius: 10px;
 
 }
 
 .home_article:hover{
-  border:solid;
-  border-color: #7f7f7f;
-
-  border-width:1px;
+  /*border:solid;
+  border-color: #cccccc;
+  border-radius: 10px;
+  border-width:1px;*/
+  box-shadow: 0px 0px 4px -1px gray;
 
 }
 
 .project_tab{
   /*display:flex;
   align-items: end;*/
-  outline:2px solid yellow;
   height:100%;
   background-color:gray;
-  
+  border-radius: 10px;
 
 }
 
@@ -411,6 +501,7 @@ header{
   white-space: nowrap;
   -ms-overflow-style:none;
   scrollbar-width:none;
+
 }
 
 .gallery_container::-webkit-scrollbar{
@@ -433,8 +524,8 @@ header{
 footer{
   height:100px;
   margin-top:0;
-  background-color: #262626;
-  color:#F2F2F2;
+  background-color: #E8E8E8;
+  color:#6e6e6e;
   padding-top:20px;
   padding-left:10px;
   font-family:  'Arial Narrow', Arial, sans-serif;
