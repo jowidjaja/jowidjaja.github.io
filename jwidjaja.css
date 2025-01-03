@@ -533,6 +533,7 @@ header{
 
 }
 
+
 /* FOOTER */
 footer{
   height:100px;
@@ -550,4 +551,126 @@ footer{
 }
 footer a{
   color:#755555
+}
+
+
+
+
+/* RESUME */
+.resume_wrapper h1{
+  font-size:30px;
+}
+
+.resume_wrapper h2{
+  font-size:20px;
+}
+.resume_wrapper button{
+  background-color:#0D0D0D;
+  border-radius:5px;
+  width:175px;
+  height:30px;
+  color:white;
+  
+}
+.resume_top{
+  display:flex;
+  height:60vh;
+}
+
+.resume_left{
+  margin-right:15px;
+}
+.resume_name{
+  height:auto;
+  width:250px;
+  background-color: white;
+  border-radius:20px;
+  padding: 10% 15px;
+  text-align: center;
+  vertical-align:middle;
+  box-shadow: 1px 1px 2px -1px gray;
+}
+.resume_contact{
+  margin-top:15px;
+  height:105px;
+  width:250px;
+  background-color: white;
+  border-radius:20px;
+  padding: 20px 15px;
+  box-shadow: 1px 1px 2px -1px gray;
+}
+.resume_contact h2{
+  margin-bottom:5px;
+}
+.r_mail{
+  display:flex;
+}
+.r_mail img{
+  height:20px;
+  margin-right:10px;
+}
+.r_home img{
+  height:20px;
+  margin-right:10px;
+}
+.r_home{
+  display:flex;
+}
+.resume_education{
+  margin-top:15px;
+  height:160px;
+  width:250px;
+  background-color: white;
+  border-radius:20px;
+  padding:15px;
+  box-shadow: 1px 1px 2px -1px gray;
+}
+.resume_education h2{
+  margin-bottom:5px;
+}
+.resume_education h3{
+  font-size:15px;
+}
+.resume_education li{
+  font-size:12px;
+}
+.resume_pdf{
+  margin-top:15px;
+  height:75px;
+  width:250px;
+  background-color: white;
+  border-radius:20px;
+  box-shadow: 1px 1px 2px -1px gray;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.resume_leadership{
+  height:200;
+  width:100%;
+  background-color:white;
+  border-radius:20px;
+  padding:20px;
+  box-shadow: 1px 1px 2px -1px gray;
+}
+.resume_work{
+  height:200px;
+  width:100%;
+  margin-top:15px;
+  border-radius: 20px;
+  background-color: white;
+  padding:20px;
+  box-shadow: 1px 1px 2px -1px gray;
+}
+
+.resume_achievements{
+  margin-top:15px;
+  margin-bottom:60px;
+  height:200px;
+  width:100%;
+  border-radius: 20px;
+  background-color: white;
+  padding:20px;
+  box-shadow: 1px 1px 2px -1px gray;
 }
