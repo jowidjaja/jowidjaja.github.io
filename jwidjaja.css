@@ -331,10 +331,14 @@ footer a{
    
 }
 
-@media (max-width:800px){
+@media (min-width:341px) and (max-width:800px){
     #wrapper{
         margin-left:5%;
         margin-right:5%;
+    }
+    header{
+        padding:0;
+
     }
     .home_cont1{
         display:block;
@@ -371,9 +375,12 @@ footer a{
         margin-left:0;
 
     }
-    header{
-        padding:0;
-
-    }
 }
 
+@media (max-width:341px){
+
+    .nav_links{
+        margin-left:0;
+        font-size:12px;
+    }
+}
