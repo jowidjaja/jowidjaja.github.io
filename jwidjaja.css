@@ -76,6 +76,7 @@ font-stretch: condensed;
 font-size: 25px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 transition: color 0.2s ease;
+
 }
 .logo a:hover{
 color:#D08686;
@@ -117,6 +118,9 @@ font-weight: 700;
     margin-right:auto;
     border-radius: 10px;
     box-shadow: 1px 1px 2px -1px gray;
+}
+.home_conttitle h1{
+    text-align: center;
 }
 
 .home_title{
@@ -343,14 +347,13 @@ footer a{
         display:block;
     }
     .home_conttitle h1{
-        text-align: center;
         font-size: 40px;
     }
     .home_cont2body{
         width:100%;
     }
     .home_cont2cont{
-        margin-bottom:20px;
+        margin-bottom:50px;
     }
     .home_cont2img img{
         width:100%;
@@ -361,6 +364,15 @@ footer a{
         font-size:16px;
         padding: 10px 30px;
         border-radius: 30px;
+        margin-top:5px;
+
+    }
+    .nav_links{
+        margin-left:0;
+        background-color: yellow;
+    }
+    header{
+        padding:0;
 
     }
 }
