@@ -242,8 +242,9 @@ font-weight: 700;
    
 
 }
-.home_cont2 img{
+.home_cont2img img{
     height:180px;
+    width:auto;
     border-radius:2px;
 }
 
@@ -265,21 +266,10 @@ font-weight: 700;
 }
 
 
-.home_cont2A2{
+.home_cont2body{
     width:180px;
+}
 
-}
-
-.home_cont2B2{
-    width:180px;
-  
-}
-.home_cont2C2{
-    width:180px;
-}
-.home_cont2D2{
-    width:180px;
-}
 
 
 
@@ -301,7 +291,54 @@ footer a{
     color:#6e6e6e
 }
 
+
+/*THOUGHTS*/
+.thoughts h1{
+    margin-bottom:20px;
+    text-align: center;
+    font-size:40px;
+}
+.thought_card{
+    background-color: white;
+    border-radius: 10px;
+    padding:20px;
+    display: flex;
+}
+.thoughts img{
+    height: 150px;
+}
+.thought_cont{
+    margin-left:20px;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width:992px){
-
+    #wrapper{
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .home_cont1{
+        display:block;
+    }
+    .home_cont1 img{
+        width:100%;
+        height:auto;
+    }
+    .home_cont2flex{
+        display:block;
+    }
+    .home_conttitle h1{
+        text-align: center;
+    }
+    .home_cont2body{
+        width:100%;
+    }
+    .home_cont2cont{
+        margin-bottom:20px;
+    }
+    .home_cont2img img{
+        width:100%;
+        height:auto;
+        border-radius:2px;
+    }
 }
