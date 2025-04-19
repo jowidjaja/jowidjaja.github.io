@@ -262,7 +262,7 @@ font-weight: 700;
 
 .home_cont2flex{
     display:flex;
-    margin-top:10px;
+    margin-top: 5px;
     justify-content: space-between;
 }
 
