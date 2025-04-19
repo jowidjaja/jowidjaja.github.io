@@ -312,7 +312,10 @@ footer a{
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width:992px){
+
+
+
+@media (max-width:800px){
     #wrapper{
         margin-left:5%;
         margin-right:5%;
@@ -329,6 +332,7 @@ footer a{
     }
     .home_conttitle h1{
         text-align: center;
+        font-size: 40px;
     }
     .home_cont2body{
         width:100%;
@@ -341,4 +345,16 @@ footer a{
         height:auto;
         border-radius:2px;
     }
+}
+
+@media (min-width:800px) and (max-width:1300px){
+
+    .home_cont2flex{
+        overflow-x: scroll;
+        overflow-y:hidden;
+    }
+    .home_cont2cont{
+        margin-right:10px;
+    }
+   
 }
