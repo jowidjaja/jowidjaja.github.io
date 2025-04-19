@@ -190,7 +190,7 @@ font-weight: 700;
     background-color: black;
     color:white;
     border-radius:15px;
-    padding:3px 10px;
+    padding:6px 18px;
     font-family: 'calibri','Arial', 'sans-serif';
     text-decoration: none;
     font-size:12px;
@@ -314,7 +314,18 @@ footer a{
 
 /* RESPONSIVE DESIGN */
 
+@media (min-width:800px) and (max-width:1300px){
 
+    .home_cont2flex{
+        overflow-x: scroll;
+        overflow-y:hidden;
+    }
+    .home_cont2cont{
+        margin-right:10px;
+    }
+
+   
+}
 
 @media (max-width:800px){
     #wrapper{
@@ -346,16 +357,11 @@ footer a{
         height:auto;
         border-radius:2px;
     }
+    .home_wrapper a{
+        font-size:16px;
+        padding: 10px 30px;
+        border-radius: 30px;
+
+    }
 }
 
-@media (min-width:800px) and (max-width:1300px){
-
-    .home_cont2flex{
-        overflow-x: scroll;
-        overflow-y:hidden;
-    }
-    .home_cont2cont{
-        margin-right:10px;
-    }
-   
-}
