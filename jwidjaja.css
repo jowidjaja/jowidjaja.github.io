@@ -197,6 +197,8 @@ header{
 /*CONTAINER 1*/
 .home_cont{
     display:flex;
+    width:100%;
+
 }
 
 .home_links{
@@ -214,11 +216,13 @@ header{
 }
 .home_body{
     order:2;
-    width:675px; 
+    width:100%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px 2px -1px gray;;
-    margin: 20px auto;
+    margin-right:0px;
+    margin-top:20px;
+    margin-bottom:20px;
     padding:20px;
     box-sizing: border-box;
     display:flex;
@@ -266,11 +270,6 @@ footer a{
 /* RESPONSIVE DESIGN */
 
 @media (min-width:340px) and (max-width:1300px){
-    .home_conttitle{
-    background-color: yellow;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px -1px gray;
-}
     .home_sheader{
         margin-top: 10px;
     }
