@@ -108,7 +108,7 @@ header{
     justify-content: center;
     align-items: center;
     height:250px;
-    width:97%;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
     border-radius: 10px;
@@ -208,6 +208,7 @@ header{
 }
 
 .home_links{
+    order:1;
     height: 100%;
     width: 100px;
     background-color: white;
@@ -216,69 +217,22 @@ header{
     padding:10px;
     margin-top: 20px;
     margin-bottom:20px;
-    margin-left:13px;
-    margin-right:0px;
+    margin-left:0px;
+    margin-right:20px;
 }
-.home_cont1{
-    width:675px;
+.home_body{
+    order:2;
+    width:675px; 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px -1px gray;;
+    margin: 20px auto;
+    padding:20px;
+    box-sizing: border-box;
+    display:flex;
+}
 
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px -1px gray;;
-    margin: 20px auto;
-    padding:20px;
-    box-sizing: border-box;
-    display:flex;
-}
-.home_cont1A img{
-    height:150px;
-    border-radius:5px;
-}
-.home_cont1B {
-    width:fit-content;
-    display:block;
-    margin-left:10px;
-}
-/*CONTAINER 2*/
-.home_cont2{
-    width:97%;
-    height:fit-content;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px -1px gray;;
-    margin: 20px auto;
-    padding:20px;
-    box-sizing: border-box;
-}
-.home_cont2flex{
-    display:flex;
-    margin-top: 5px;
-    justify-content: space-between;
-}
-.home_cont2body{
-    width:180px;
-}
-.linebreak{
-    height:20px;
-}
-.home_cont2img img{
-    height:180px;
-    width:auto;
-    border-radius:2px;
-    margin-bottom: 15px;
-}
-/*CONTAINER 3*/
-.home_cont3{
-    width:97%;
-    height:fit-content;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px -1px gray;;
-    margin: 20px auto;
-    margin-top:0px;
-    padding:20px;
-    box-sizing: border-box;
-}
+
 
 /*HOME FOOTER*/
 footer{
@@ -319,33 +273,38 @@ footer a{
 
 /* RESPONSIVE DESIGN */
 
-@media (min-width:800px) and (max-width:1300px){
-    .home_cont2flex{
-        overflow-x: scroll;
-        overflow-y:hidden;
-    }
-    .home_cont2cont{
-        margin-right:10px;
-    }  
+@media (min-width:850px) and (max-width:1300px){
+
     .home_sheader{
         margin-top: -60px;
     }
 }
-@media (min-width:668px) and (max-width:800px){
-    .home_sheader{
-        margin-top:-60px;
-    }
-}
-@media (min-width:800px) and (max-width:1000px){
-    .home_cont1{
-        display:block;
-    }
-    .home_cont1 img{
-        width:100%;
-        height: auto;
-    }
+
+@media (min-width:850px) and (max-width:1000px){
+
     .home_sheader{
         margin-top: 10px;
+    }
+    .home_cont{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .home_links{
+        order:2;
+         margin-left: auto;
+        margin-right: auto;
+        margin-top:20px;
+        width:100%;
+    }
+    .home_body{
+        order:1;
+    }
+     .home_wrapper a{
+        font-size:16px;
+        padding: 10px 30px;
+        border-radius: 30px;
+        margin-top:15px;
+        width:80%;
     }
 }
 
@@ -368,17 +327,28 @@ footer a{
         padding: 10px 30px;
         border-radius: 30px;
         margin-top:15px;
+        width:80%;
     }
     .home_conttitle h1{
         font-size: 40px;
     }
-    .home_cont1{
-        display:block;
+    .home_cont{
+        display:flex;
+        flex-wrap:wrap;
     }
-    .home_cont1 img{
+    .home_links{
+        order:2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:20px;
         width:100%;
-        height:auto;
     }
+    .home_body{
+        order:1;
+        display:block;
+        width:100%;
+    }
+   
     .home_cont2flex{
         display:block;
     }
@@ -423,13 +393,14 @@ footer a{
         border-radius: 30px;
         margin-top:15px;
     }
+   
     .home_conttitle h1{
         font-size: 40px;
     }
-    .home_cont1{
+    .home_body{
         display:block;
     }
-    .home_cont1 img{
+    .home_body img{
         width:100%;
         height:auto;
     }
