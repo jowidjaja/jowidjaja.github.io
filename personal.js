@@ -9,7 +9,7 @@ const gallery = [
         hidden: false,
     },
     {
-        image: "images/testpic.png",
+        image: "images/grayhavens.jpg",
         caption: "",
         date: "",
         location: "",
