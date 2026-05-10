@@ -1,0 +1,187 @@
+/* Color Scheme
+  Off-White: #F2F2F2
+  Off-Black: #262626
+  White: #FFFFFF
+  Black: #0D0D0D
+  Rose: #755555
+
+  Font Family: Franklin Gothic
+
+*/
+
+/* OVERARCHING SECTIONS */
+header, section, footer, aside, nav, main, article, figure, img {
+  display: block;
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  
+}
+
+body{
+  background-color:#E8E8E8;
+}
+#wrapper{
+  margin-left:15%;
+  margin-right:15%; 
+  margin-top: 30px;
+  font-family:calibri,Arial, sans-serif;
+}
+
+
+h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-stretch: condensed;
+  letter-spacing: 6px;
+  font-size:50px;
+}
+h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-stretch: condensed;
+  font-size:25px;
+}
+
+/* HEADING & Navigation */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:70px;
+  width:100%;
+  margin-top:0;
+  padding:15px 25px;
+  margin-bottom:0px;
+  
+}
+.header_border{
+  height:5px;
+  width:100%;
+  margin-top:-25px;
+  margin-bottom:20px;
+}
+.logo a{
+  color: #6e6e6e;
+  text-decoration: none;
+  font-stretch: condensed;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: color 0.2s ease;
+}
+.logo a:hover{
+  color:#D08686;
+  transition: color 0.2s ease;
+  
+}
+.nav_links{
+  display:flex;
+  justify-content: space-between;
+}
+.menu li{
+  display:inline;
+}
+.menu a{
+  color:#6e6e6e;
+  text-decoration:none;
+  margin-left:25px;
+  transition: color 0.2s ease;
+  
+}
+.menu a:hover{
+  color:#D08686;
+  text-decoration:underline;
+  text-underline-offset: 7px;
+  transition: color 0.2s ease;
+  font-weight: 700;
+}
+
+
+/*GALLERY*/
+.gallery{
+  
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.gallery_item{
+    background-color: white;
+    padding:10px;
+    border-radius: 20px;
+    height: 250px;
+    width:250px;
+    overflow: hidden;
+    position:relative;
+}
+
+.gallery_item img{
+    height: 100%;
+    width:100%;
+}
+
+.gallery_item p {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #F2F2F2;
+  font-size: 14px;
+  z-index:2;
+}
+
+
+@media (max-width: 1050px) {
+  .gallery {
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(1, 250px);
+  }
+}
+
+
+/*ABOUT*/
+.main_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_container{
+    display: block;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 900px;
+    min-width: 300px;
+    height: fit-content;
+    padding:20px;
+    color:#404040;
+  
+}
+
+
+/* FOOTER */
+footer{
+  height:100px;
+  margin-top:0;
+  margin-right:2.5%;
+  background-color: #E8E8E8;
+  color:#6e6e6e;
+  padding-top:20px;
+  padding-left:10px;
+  font-family:  'Arial Narrow', Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: ultra-condensed;
+  font-size:15px;
+  text-align: right;
+  font-family:calibri,Arial, sans-serif;
+}
+
+
