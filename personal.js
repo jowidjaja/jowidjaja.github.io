@@ -1,11 +1,25 @@
-//array for gallery
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("fullImage");
+const modalCaption = document.getElementById("modalCaption");
+const closeBtn = document.querySelector(".close");
+
+//array for gallery, lazy loading, defer script
 const gallery = [
 
     {
         image: "images/260508_karen.jpg",
-        caption: "",
+        caption: "This physics nerd is elite",
         date: "2026-05-08",
         location: "Hauger's Retirement Party",
+        tags: [],
+        hidden: false,
+
+    },
+    {
+        image: "images/260506_drs.jpg",
+        caption: "Last Dental Research Society meeting as president",
+        date: "2026-05-06",
+        location: "Ed Commons - MCG",
         tags: [],
         hidden: false,
 
@@ -20,7 +34,23 @@ const gallery = [
 
     },
     {
-        image: "images/260407_lions.JPG",
+        image: "images/260502_muntean.JPG",
+        caption: "The drawings!",
+        date: "2026-05-02",
+        location: "Elm Hall",
+        tags: [],
+        hidden: false,
+    },
+    {
+        image: "images/260419_food.JPG",
+        caption: "",
+        date: "2026-04-19",
+        location: "Elm Hall",
+        tags: [],
+        hidden: false,
+    },
+    {
+        image: "images/260407_lions.jpg",
         caption: "",
         date: "2026-04-07",
         location: "Atlanta Zoo",
@@ -35,7 +65,14 @@ const gallery = [
         tags: [],
         hidden: false,
     },
-
+    {
+        image: "images/260223_mathnerds.JPG",
+        caption: "Math nerds, 10/10",
+        date: "2026-02-23",
+        location: "Savannah River Brewery",
+        tags: [],
+        hidden: false,
+    },
     {
         image: "images/251027_museum.jpg",
         caption: "",
@@ -47,21 +84,7 @@ const gallery = [
     
 ]
 
-/*
-const galleryContainer = document.querySelector(".gallery");
 
-gallery.forEach(item => {
-  const card = document.createElement("div");
-  card.classList.add("gallery_item");
-
-  card.innerHTML = `
-    <img src="${item.image}" alt="">
-    ${item.caption ? `<p>${item.caption}</p>` : ""}
-  `;
-
-  galleryContainer.appendChild(card);
-});
-*/
 
 
 //for year 
@@ -104,12 +127,20 @@ Object.keys(grouped)
       card.classList.add("gallery_item");
 
       card.innerHTML = `
+      <div class="image_wrapper">
         <img src="${item.image}" alt="">
-        <p>${item.caption}</p>
-      `;
+
+        <div class="image_overlay">
+          <p class="overlay_caption">
+            ${item.caption || ""}
+          </p>
+        </div>
+      </div>
+    `;
         card.addEventListener("click", () => {
         modal.classList.add("show");
         modalImg.src = item.image;
+        modalCaption.textContent = item.caption || "";
         });
       grid.appendChild(card);
     });
@@ -124,9 +155,7 @@ Object.keys(grouped)
 
 
 
-const modal = document.getElementById("imageModal");
-const modalImg = document.getElementById("fullImage");
-const closeBtn = document.querySelector(".close");
+
 
 closeBtn.addEventListener("click", () => {
     modal.classList.remove("show");
