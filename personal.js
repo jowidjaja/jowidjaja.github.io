@@ -20,7 +20,7 @@ const gallery = [
 
     },
     {
-        image: "images/260407_lions.jpg",
+        image: "images/260502_mysterybook.jpg",
         caption: "",
         date: "2026-04-07",
         location: "Atlanta Zoo",
