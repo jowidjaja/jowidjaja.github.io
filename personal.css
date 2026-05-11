@@ -68,11 +68,11 @@ header{
   font-stretch: condensed;
   font-size: 25px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 .logo a:hover{
   color:#D08686;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
   
 }
 .nav_links{
@@ -86,7 +86,7 @@ header{
   color:#6e6e6e;
   text-decoration:none;
   margin-left:25px;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
   
 }
 .menu a:hover{
@@ -182,6 +182,18 @@ header{
     color:#404040;
   
 }
+.contact a{
+  text-decoration: none;
+  color:#404040;
+  transition: color 0.3s;
+
+}
+
+.contact a:hover{
+  color:#D08686;
+  transition: color 0.3s;
+}
+
 .modal{
     position:fixed;
     z-index:1000;
