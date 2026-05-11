@@ -67,7 +67,7 @@ const gallery = [
     },
     {
         image: "images/260223_mathnerds.JPG",
-        caption: "Math nerds, 10/10",
+        caption: "Thank God for math nerds, 10/10",
         date: "2026-02-23",
         location: "Savannah River Brewery",
         tags: [],
