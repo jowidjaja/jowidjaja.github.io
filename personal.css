@@ -117,22 +117,7 @@ header{
     position:relative;
 }
 
-.gallery_item img{
-    height: 100%;
-    width:100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius:15px;
-}
 
-.gallery_item p {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: #f2f2f2cd;
-  font-size: 14px;
-  z-index:2;
-}
 
 
 @media (max-width: 1050px) {
@@ -237,6 +222,15 @@ header{
     transform:scale(1);
 }
 
+#modalCaption {
+  color: white;
+  font-size: 1rem;
+  z-index: 1001;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
 .close{
     position:absolute;
     top:20px;
@@ -244,6 +238,67 @@ header{
     color:white;
     font-size:40px;
     cursor:pointer;
+}
+
+
+/* GALLERY HOVER OVERLAY */
+.gallery_item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.image_wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.image_wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.image_overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay_caption {
+  color: white;
+  font-size: 0.95rem;
+  margin: 0;
+  text-shadow: 0 1px 10px rgba(0,0,0,0.45);
+}
+
+.image_wrapper:hover .image_overlay {
+  opacity: 1;
+}
+
+.image_wrapper:hover img {
+  transform: scale(1.03);
 }
 /* FOOTER */
 footer{
