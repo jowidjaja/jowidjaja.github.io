@@ -5,7 +5,14 @@ const closeBtn = document.querySelector(".close");
 
 //array for gallery, lazy loading, defer script
 const gallery = [
-
+    {
+        image: "images/260511_middlemarch.JPG",
+        caption: "",
+        date: "2026-05-11",
+        location: "Middlemarch by George Elliot",
+        tags: [],
+        hidden: false,
+    },
     {
         image: "images/260508_karen.jpg",
         caption: "This physics nerd is elite",
