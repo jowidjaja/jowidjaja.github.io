@@ -3,8 +3,24 @@ const modalImg = document.getElementById("fullImage");
 const modalCaption = document.getElementById("modalCaption");
 const closeBtn = document.querySelector(".close");
 
-//array for gallery, lazy loading, defer script
+//GALLERY FOR ARRAY (LAZY LOADING?)
 const gallery = [
+    {
+        image: "images/260515_donkey.JPG",
+        caption: "",
+        date: "2026-05-15",
+        location: "Donkeys at Stallings Island",
+        tags: [],
+        hidden: false,
+    },
+    {
+        image: "images/260514_sandwich.JPG",
+        caption: "",
+        date: "2026-05-15",
+        location: "Turkey sandwich for lunch",
+        tags: [],
+        hidden: false,
+    },
     {
         image: "images/260511_middlemarch.JPG",
         caption: "",
@@ -91,14 +107,9 @@ const gallery = [
     
 ]
 
-
-
-
-//for year 
+//GALLERY
 const galleryContainer = document.querySelector(".gallery_container");
-
 const grouped = {};
-
 gallery.forEach(item => {
   if (item.hidden) return;
 
@@ -110,29 +121,23 @@ gallery.forEach(item => {
 
   grouped[year].push(item);
 });
-
 Object.keys(grouped)
   .sort((a, b) => b - a)
   .forEach(year => {
     const section = document.createElement("div");
     section.classList.add("year_section");
-
     const marker = document.createElement("div");
     marker.classList.add("year_marker");
-
     marker.innerHTML = `
       <div class="year_line"></div>
       <span>${year}</span>
       <div class="year_line"></div>
     `;
-
     const grid = document.createElement("div");
     grid.classList.add("gallery");
-
     grouped[year].forEach(item => {
       const card = document.createElement("div");
       card.classList.add("gallery_item");
-
       card.innerHTML = `
       <div class="image_wrapper">
         <img src="${item.image}" alt="">
@@ -151,19 +156,12 @@ Object.keys(grouped)
         });
       grid.appendChild(card);
     });
-
     section.appendChild(marker);
     section.appendChild(grid);
     galleryContainer.appendChild(section);
   });
 
-
-
-
-
-
-
-
+//GALLERY CLICKED DISPLAY
 closeBtn.addEventListener("click", () => {
     modal.classList.remove("show");
 });
@@ -172,4 +170,24 @@ modal.addEventListener("click", (e) => {
     if(e.target === modal){
        modal.classList.remove("show");
     }
+});
+
+//TOGGLE BUTTON
+const themeToggle = document.getElementById("themeToggle");
+
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+}
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    const darkModeEnabled =
+      document.body.classList.contains("dark-mode");
+
+    localStorage.setItem(
+      "theme",
+      darkModeEnabled ? "dark" : "light"
+    );
 });
