@@ -123,7 +123,7 @@ const gallery = [
     },
     {
         image: "images/250405_eye.jpg",
-        caption: "An EYE!",
+        caption: "Anna's EYE!",
         date: "2025-04-05",
         location: "Memphis School of Optometry",
         tags: ["bucket-listing"],
