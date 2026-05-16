@@ -5,7 +5,15 @@ const closeBtn = document.querySelector(".close");
 
 //GALLERY FOR ARRAY (LAZY LOADING?)
 const gallery = [
-     {
+    {
+        image: "images/260516_leuchtturm.JPG",
+        caption: "The BEST notebook. Tried and tested.",
+        date: "2026-05-16",
+        location: "Elm Hall",
+        tags: ["favorites"],
+        hidden: false,
+    }, 
+    {
         image: "images/260515_mariakayak.JPG",
         caption: "",
         date: "2026-05-15",
@@ -18,7 +26,7 @@ const gallery = [
         caption: " Stallings Island",
         date: "2026-05-15",
         location: "Stallings Island",
-        tags: ["nature"],
+        tags: ["nature","bucket-listing"],
         hidden: false,
     },
    
@@ -111,6 +119,14 @@ const gallery = [
         date: "2025-12-27",
         location: "Milken Center for Advancing the American Dream",
         tags: ["places"],
+        hidden: false,
+    },
+    {
+        image: "images/250405_eye.jpg",
+        caption: "An EYE!",
+        date: "2025-04-05",
+        location: "Memphis School of Optometry",
+        tags: ["bucket-listing"],
         hidden: false,
     },
     
