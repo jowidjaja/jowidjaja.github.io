@@ -5,20 +5,29 @@ const closeBtn = document.querySelector(".close");
 
 //GALLERY FOR ARRAY (LAZY LOADING?)
 const gallery = [
-    {
-        image: "images/260515_donkey.JPG",
+     {
+        image: "images/260515_mariakayak.JPG",
         caption: "",
         date: "2026-05-15",
-        location: "Donkeys at Stallings Island",
-        tags: [],
+        location: "Kayaking with Maria",
+        tags: ["friends"],
         hidden: false,
     },
     {
+        image: "images/260515_donkey.JPG",
+        caption: " Stallings Island",
+        date: "2026-05-15",
+        location: "Stallings Island",
+        tags: ["nature"],
+        hidden: false,
+    },
+   
+    {
         image: "images/260514_sandwich.JPG",
         caption: "",
-        date: "2026-05-15",
+        date: "2026-05-14",
         location: "Turkey sandwich for lunch",
-        tags: [],
+        tags: ["food"],
         hidden: false,
     },
     {
@@ -26,7 +35,7 @@ const gallery = [
         caption: "",
         date: "2026-05-11",
         location: "Middlemarch by George Elliot",
-        tags: [],
+        tags: ["academia"],
         hidden: false,
     },
     {
@@ -34,7 +43,7 @@ const gallery = [
         caption: "This physics nerd is elite",
         date: "2026-05-08",
         location: "Hauger's Retirement Party",
-        tags: [],
+        tags: ["friends"],
         hidden: false,
 
     },
@@ -43,7 +52,7 @@ const gallery = [
         caption: "Last Dental Research Society meeting as president",
         date: "2026-05-06",
         location: "Ed Commons - MCG",
-        tags: [],
+        tags: ["academia"],
         hidden: false,
 
     },
@@ -52,7 +61,7 @@ const gallery = [
         caption: "",
         date: "2026-05-02",
         location: "Mystery Book Era",
-        tags: [],
+        tags: ["random"],
         hidden: false,
 
     },
@@ -61,7 +70,7 @@ const gallery = [
         caption: "The drawings!",
         date: "2026-05-02",
         location: "Elm Hall",
-        tags: [],
+        tags: ["academia"],
         hidden: false,
     },
     {
@@ -69,7 +78,7 @@ const gallery = [
         caption: "",
         date: "2026-04-19",
         location: "Elm Hall",
-        tags: [],
+        tags: ["food"],
         hidden: false,
     },
     {
@@ -77,7 +86,7 @@ const gallery = [
         caption: "",
         date: "2026-04-07",
         location: "Atlanta Zoo",
-        tags: [],
+        tags: ["nature"],
         hidden: false,
     },
     {
@@ -85,7 +94,7 @@ const gallery = [
         caption: "The Gray Havens",
         date: "2026-04-07",
         location: "Gray Havens",
-        tags: [],
+        tags: ["events"],
         hidden: false,
     },
     {
@@ -93,15 +102,15 @@ const gallery = [
         caption: "Thank God for math nerds, 10/10",
         date: "2026-02-23",
         location: "Savannah River Brewery",
-        tags: [],
+        tags: ["friends"],
         hidden: false,
     },
     {
         image: "images/251027_museum.jpg",
         caption: "",
-        date: "2025-10-27",
+        date: "2025-12-27",
         location: "Milken Center for Advancing the American Dream",
-        tags: [],
+        tags: ["places"],
         hidden: false,
     },
     
@@ -144,7 +153,7 @@ Object.keys(grouped)
 
         <div class="image_overlay">
           <p class="overlay_caption">
-            ${item.caption || ""}
+             ${[item.date, item.caption].filter(Boolean).join(" | ")}
           </p>
         </div>
       </div>
@@ -152,7 +161,7 @@ Object.keys(grouped)
         card.addEventListener("click", () => {
         modal.classList.add("show");
         modalImg.src = item.image;
-        modalCaption.textContent = item.caption || "";
+        modalCaption.textContent = [item.date, item.caption].filter(Boolean).join(" | ");
         });
       grid.appendChild(card);
     });
@@ -174,18 +183,13 @@ modal.addEventListener("click", (e) => {
 
 //TOGGLE BUTTON
 const themeToggle = document.getElementById("themeToggle");
-
 if(localStorage.getItem("theme") === "dark"){
     document.body.classList.add("dark-mode");
 }
-
 themeToggle.addEventListener("click", () => {
-
     document.body.classList.toggle("dark-mode");
-
     const darkModeEnabled =
       document.body.classList.contains("dark-mode");
-
     localStorage.setItem(
       "theme",
       darkModeEnabled ? "dark" : "light"
