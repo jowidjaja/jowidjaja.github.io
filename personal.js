@@ -134,68 +134,72 @@ const gallery = [
 
 //GALLERY
 const galleryContainer = document.querySelector(".gallery_container");
-const grouped = {};
-gallery.forEach(item => {
-  if (item.hidden) return;
 
-  const year = new Date(item.date).getFullYear();
+if (galleryContainer) {
+  const grouped = {};
+  gallery.forEach(item => {
+    if (item.hidden) return;
 
-  if (!grouped[year]) {
-    grouped[year] = [];
-  }
+    const year = new Date(item.date).getFullYear();
 
-  grouped[year].push(item);
-});
-Object.keys(grouped)
-  .sort((a, b) => b - a)
-  .forEach(year => {
-    const section = document.createElement("div");
-    section.classList.add("year_section");
-    const marker = document.createElement("div");
-    marker.classList.add("year_marker");
-    marker.innerHTML = `
-      <div class="year_line"></div>
-      <span>${year}</span>
-      <div class="year_line"></div>
-    `;
-    const grid = document.createElement("div");
-    grid.classList.add("gallery");
-    grouped[year].forEach(item => {
-      const card = document.createElement("div");
-      card.classList.add("gallery_item");
-      card.innerHTML = `
-      <div class="image_wrapper">
-        <img src="${item.image}" alt="">
+    if (!grouped[year]) {
+      grouped[year] = [];
+    }
 
-        <div class="image_overlay">
-          <p class="overlay_caption">
-             ${[item.date, item.caption].filter(Boolean).join(" | ")}
-          </p>
+    grouped[year].push(item);
+  });
+  Object.keys(grouped)
+    .sort((a, b) => b - a)
+    .forEach(year => {
+      const section = document.createElement("div");
+      section.classList.add("year_section");
+      const marker = document.createElement("div");
+      marker.classList.add("year_marker");
+      marker.innerHTML = `
+        <div class="year_line"></div>
+        <span>${year}</span>
+        <div class="year_line"></div>
+      `;
+      const grid = document.createElement("div");
+      grid.classList.add("gallery");
+      grouped[year].forEach(item => {
+        const card = document.createElement("div");
+        card.classList.add("gallery_item");
+        card.innerHTML = `
+        <div class="image_wrapper">
+          <img src="${item.image}" alt="">
+
+          <div class="image_overlay">
+            <p class="overlay_caption">
+              ${[item.date, item.caption].filter(Boolean).join(" | ")}
+            </p>
+          </div>
         </div>
-      </div>
-    `;
-        card.addEventListener("click", () => {
-        modal.classList.add("show");
-        modalImg.src = item.image;
-        modalCaption.textContent = [item.date, item.caption].filter(Boolean).join(" | ");
-        });
-      grid.appendChild(card);
+      `;
+          card.addEventListener("click", () => {
+          modal.classList.add("show");
+          modalImg.src = item.image;
+          modalCaption.textContent = [item.date, item.caption].filter(Boolean).join(" | ");
+          });
+        grid.appendChild(card);
+      });
+      section.appendChild(marker);
+      section.appendChild(grid);
+      galleryContainer.appendChild(section);
     });
-    section.appendChild(marker);
-    section.appendChild(grid);
-    galleryContainer.appendChild(section);
+
+  //GALLERY CLICKED DISPLAY
+  closeBtn.addEventListener("click", () => {
+      modal.classList.remove("show");
   });
 
-//GALLERY CLICKED DISPLAY
-closeBtn.addEventListener("click", () => {
-    modal.classList.remove("show");
-});
+  modal.addEventListener("click", (e) => {
+      if(e.target === modal){
+        modal.classList.remove("show");
+      }
+  });
+}
 
-modal.addEventListener("click", (e) => {
-    if(e.target === modal){
-       modal.classList.remove("show");
-    }
-});
 
 //TOGGLE BUTTON
 const themeToggle = document.getElementById("themeToggle");
