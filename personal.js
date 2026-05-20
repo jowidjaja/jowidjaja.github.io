@@ -6,6 +6,14 @@ const closeBtn = document.querySelector(".close");
 //GALLERY FOR ARRAY (LAZY LOADING?)
 const gallery = [
     {
+        image: "images/260519_rack.JPG",
+        caption: "",
+        date: "2026-05-19",
+        location: "Rack",
+        tags: ["ventures"],
+        hidden: false,
+    }, 
+    {
         image: "images/260516_leuchtturm.JPG",
         caption: "The BEST notebook. Tried and tested.",
         date: "2026-05-16",
