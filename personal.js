@@ -6,6 +6,30 @@ const closeBtn = document.querySelector(".close");
 //GALLERY FOR ARRAY (LAZY LOADING?)
 const gallery = [
     {
+        image: "images/260523_candle.JPG",
+        caption: "",
+        date: "2026-05-23",
+        location: "Elm Hall",
+        tags: ["favorites"],
+        hidden: false,
+    }, 
+    {
+        image: "images/260522_keyboards.jpg",
+        caption: "Lesson learned",
+        date: "2026-05-22",
+        location: "Elm Hall",
+        tags: ["lessons"],
+        hidden: false,
+    }, 
+    {
+        image: "images/260522_music.jpg",
+        caption: "",
+        date: "2026-05-22",
+        location: "Elm Hall",
+        tags: ["personal"],
+        hidden: false,
+    }, 
+    {
         image: "images/260519_rack.JPG",
         caption: "",
         date: "2026-05-19",
