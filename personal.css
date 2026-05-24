@@ -175,15 +175,6 @@ body.dark-mode .theme_toggle{
 }
 
 body.dark-mode .toggle_slider{
-  transform:translateX(32px);
-  background:white;
-}
-
-body.dark-mode .theme_toggle{
-  background:#D08686;
-}
-
-body.dark-mode .toggle_slider{
   transform:translateX(19px);
   background:white;
 }
@@ -209,6 +200,19 @@ body.dark-mode .toggle_slider{
     width:250px;
     overflow: hidden;
     position:relative;
+}
+
+.gallery_img {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.gallery_img.loaded {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 1050px) {
