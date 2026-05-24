@@ -199,8 +199,13 @@ if (galleryContainer) {
         card.classList.add("gallery_item");
         card.innerHTML = `
         <div class="image_wrapper">
-          <img src="${item.image}" alt="">
-
+          <img 
+            src="${item.image}" 
+            alt=""
+            loading="lazy"
+            decoding="async"
+            class="gallery_img"
+          />
           <div class="image_overlay">
             <p class="overlay_caption">
               ${[item.date, item.caption].filter(Boolean).join(" | ")}
@@ -214,6 +219,10 @@ if (galleryContainer) {
           modalCaption.textContent = [item.date, item.caption].filter(Boolean).join(" | ");
           });
         grid.appendChild(card);
+        const img = card.querySelector(".gallery_img");
+        img.addEventListener("load", () => {
+        img.classList.add("loaded");
+        });
       });
       section.appendChild(marker);
       section.appendChild(grid);
