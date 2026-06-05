@@ -339,6 +339,7 @@ body.dark-mode .toggle_slider{
     color:white;
     font-size:40px;
     cursor:pointer;
+    z-index: 9999;
 }
 
 /*YEAR MARKERS*/
@@ -368,6 +369,232 @@ body.dark-mode .toggle_slider{
     flex-grow:1;
 }
 
+/*THOUGHTS*/
+.thoughts_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.thought_modal {
+    background-color: white;
+    width: 80%;
+    max-width: 900px;
+    min-width: 300px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 30px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    color: #404040;
+}
+
+.thought_header {
+    flex-shrink: 0;
+}
+
+.thought_content {
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 20px;
+}
+
+.thought_header {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.thought_article_thumb {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.thought_header_text h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.thought_meta {
+    letter-spacing: 4px;
+    color: #555;
+}
+
+.thought_content {
+    line-height: 1.7;
+    color: #1B1B1D;
+    font-size: 1.1rem;
+}
+
+.thought_content p {
+    margin-bottom: 30px;
+}
+
+.thought_content h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.thought_content h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.thought_content blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 20px;
+    margin: 30px 0;
+    color: #1B1B1D;
+    font-style: italic;
+}
+
+.thought_content ul {
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+
+.thought_content li {
+    margin-bottom: 10px;
+}
+
+.thought_tags {
+    margin-top: 40px;
+    color: #b0b0b0;
+    font-size: 1.1rem;
+}
+
+.thought_card {
+    display: flex;
+    gap: 30px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    width:90%;
+    align-items: center;
+
+}
+
+.thought_thumb {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.thought_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+body.dark-mode .thought_card {
+    background-color: #1B1B1D;
+}
+
+.thought_modal {
+    background: white;
+    color: #1B1B1D;
+}
+
+body.dark-mode .thought_modal {
+    background: #1B1B1D;
+    color: #E8E8E8;
+}
+
+.thought_modal {
+    scrollbar-width: thin;
+    scrollbar-color: #bbb transparent;
+}
+
+.thought_modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.thought_modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.thought_modal::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 20px;
+}
+
+.thought_info h2,
+.thought_header_text h1 {
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 900px) {
+    .thought_card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .thought_thumb {
+        width: 220px;
+        height: 220px;
+    }
+
+    .thought_info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .thought_info h2 {
+        margin-top: 15px;
+    }
+    .thought_modal {
+        width: 95%;
+        padding: 25px;
+        width: calc(100vw - 30px);
+        max-width: none;
+        min-width: 0;
+        padding: 25px;
+        margin: 15px;
+        position: relative;
+    }
+
+    .thought_header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .thought_article_thumb {
+        width: 150px;
+        height: 150px;
+    }
+
+    .thought_header_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .thought_header_text h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+        word-break: break-word;
+    }
+
+    .thought_meta {
+        letter-spacing: 2px;
+    }
+}
+
+
 /*ABOUT*/
 .main_container{
     width: 100%;
@@ -380,7 +607,7 @@ body.dark-mode .toggle_slider{
     background-color: white;
     border-radius: 20px;
     margin-bottom: 20px;
-    width: 80%;
+    width: 100%;
     max-width: 900px;
     min-width: 300px;
     height: fit-content;
