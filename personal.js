@@ -6,6 +6,14 @@ const closeBtn = document.querySelector(".close");
 //GALLERY FOR ARRAY (LAZY LOADING?)
 const gallery = [
     {
+        image: "images/260605_Ally.JPG",
+        caption: "Ally got me through Jr clinic",
+        date: "2026-06-05",
+        location: "Dental College of Georgia",
+        tags: ["friends"],
+        hidden: false,
+    }, 
+    {
         image: "images/260523_candle.JPG",
         caption: "",
         date: "2026-05-23",
