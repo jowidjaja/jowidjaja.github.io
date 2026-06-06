@@ -413,7 +413,8 @@ body.dark-mode .toggle_slider{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+  
+  
 
 }
 
@@ -431,6 +432,7 @@ body.dark-mode .toggle_slider{
     flex-direction: column;
     height: 90vh;
     color: #404040;
+    margin:0 auto;
 }
 
 .thought_header {
@@ -441,6 +443,7 @@ body.dark-mode .toggle_slider{
     overflow-y: auto;
     flex: 1;
     padding-right: 20px;
+  
 }
 
 .thought_header {
