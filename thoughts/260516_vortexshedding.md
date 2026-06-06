@@ -4,7 +4,7 @@ date: 2026-05-16
 category: Reflection
 thumbnail: images/260516_vortexshedding.jpg
 tags:
-  - random thoughts
+  - randomthoughts
   - physics
   - relationships
 published: true
