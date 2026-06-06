@@ -10,7 +10,7 @@ tags:
 published: true
 ---
 
-Today, I had two kayaks strapped to the top of my car, remnants of the weekend trek to Stallings Island to go find and feed the mythic donkeys. As I turned onto an interstate road, I was faced with an unforeseen challenger, a 55mph speed limit. 
+Today, I had two kayaks strapped to the top of my car, remnants of the weekend trek to Stallings Island to go find and feed the mythic donkeys. As I turned onto an interstate road, I was faced with an unforeseen challenger, a 55 mph speed limit. 
 
 I figured the straps would hold and pressed my foot cautiously into the accelerator, watching the tip of the kayaks from the windscreen. They remained in place, but a loud groan began to perpetuate outside my window.
 
