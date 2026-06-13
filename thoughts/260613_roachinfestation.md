@@ -1,6 +1,6 @@
 ---
 title: Roach Infestation
-date: 2026-06-13
+date: 2026-06-13T12:00:00Z
 category: Reflection
 thumbnail: images/260613_roachinfestation.png
 tags:
