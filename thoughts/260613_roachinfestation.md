@@ -15,7 +15,7 @@ The roaches banded forces and decided to defend their territory. Little did they
 
 A new strategy developed: infiltrate from the inside. Traps were set and bait was placed. All that was left was to wait and watch. The poison slowly infiltrated the colony in a course of months. To my excitement, the numbers began dwindle. 
 
-The next phase consisted of the tedious removal the affected bodies. First, I began with the easier, less affected regions of the kitchen, emptying their belongings and wiping away any last traces of the wounded soldiers. Finally, I made my way to the dreaded sink cabinet, only to realize that while it was a prominent outpost, it was not the ain base. 
+The next phase consisted of the tedious removal the affected bodies. First, I began with the easier, less affected regions of the kitchen, emptying their belongings and wiping away any last traces of the wounded soldiers. Finally, I made my way to the dreaded sink cabinet, only to realize that while it was a prominent outpost, it was not the main base. 
 
 Over months of deep cleaning, searching, and scavenging, the true source finally revealed itself when moving my fridge. At last, the stronghold was found. There, clustered under the warmth of the fridge compressor, lay the remnants of the colony, already seemingly affected by the poisonous bait released months earlier. 
 
