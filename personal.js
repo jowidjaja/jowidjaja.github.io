@@ -6,6 +6,38 @@ const closeBtn = document.querySelector(".close");
 //GALLERY FOR ARRAY (LAZY LOADING?)
 const gallery = [
     {
+        image: "images/260723_macbook.JPG",
+        caption: "Wow. I guess people do really change.",
+        date: "2026-07-23",
+        location: "Elm Hall",
+        tags: ["growth"],
+        hidden: false,
+    }, 
+    {
+        image: "images/260722_sammy.JPG",
+        caption: "",
+        date: "2026-07-22",
+        location: "Elm Hall",
+        tags: ["growth"],
+        hidden: false,
+    }, 
+    {
+        image: "images/260722_keyboard.JPG",
+        caption: "1 year and a couple hundred dollarslater, we are back baby.",
+        date: "2026-07-22",
+        location: "Elm Hall",
+        tags: ["ventures"],
+        hidden: false,
+    }, 
+    {
+        image: "images/260720_isha.JPG",
+        caption: "",
+        date: "2026-07-20",
+        location: "Dalton, GA",
+        tags: ["friends"],
+        hidden: false,
+    }, 
+    {
         image: "images/260605_Ally.JPG",
         caption: "Ally got me through Jr clinic",
         date: "2026-06-05",
