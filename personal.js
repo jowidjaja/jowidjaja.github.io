@@ -7,7 +7,7 @@ const closeBtn = document.querySelector(".close");
 const gallery = [
     {
         image: "images/260723_macbook.JPG",
-        caption: "Wow. I guess people do really change.",
+        caption: "Wow. I guess people can really change.",
         date: "2026-07-23",
         location: "Elm Hall",
         tags: ["growth"],
@@ -23,7 +23,7 @@ const gallery = [
     }, 
     {
         image: "images/260722_keyboard.JPG",
-        caption: "1 year and a couple hundred dollarslater, we are back baby.",
+        caption: "One year + a couple hundred dollars later... We are back baby.",
         date: "2026-07-22",
         location: "Elm Hall",
         tags: ["ventures"],
