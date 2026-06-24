@@ -186,6 +186,14 @@ const gallery = [
         hidden: false,
     },
     {
+        image: "images/260118_aldigang.JPG",
+        caption: "Aldi Gang",
+        date: "2026-01-18",
+        location: "Aldi",
+        tags: ["friends"],
+        hidden: false,
+    },
+    {
         image: "images/251027_museum.jpg",
         caption: "",
         date: "2025-12-27",
