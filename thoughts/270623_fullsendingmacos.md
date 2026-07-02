@@ -1,8 +1,8 @@
 ---
 title: Full Sending the Apple Ecosystem
-date: 2026-07-23T12:00:00Z
+date: 2026-06-23T12:00:00Z
 category: Reflection
-thumbnail: images/260723_macbook.JPG
+thumbnail: images/260623_macbook.JPG
 tags:
   - growth
   - technology
