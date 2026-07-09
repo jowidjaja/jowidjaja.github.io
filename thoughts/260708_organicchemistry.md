@@ -54,7 +54,7 @@ It was after ochem, I started becoming more curious about the power that God had
 <br>
 <br>
 
-As I get older, I'm starting to understand that multiple things can be true at once. One, I may just have a learning style that is extremely chaotic for the first 3/4s of the journey and then it suddenly clicks. Two, this experience was meaningful because it helped me untie my worth from my academic performance and acted as a turning point for exploring faith, values, and a relationship with God. 
+As I get older, I'm starting to understand that multiple things can be true at once. One, I may just have a learning style that is extremely chaotic for the first 3/4s of the journey and then it suddenly clicks. Two, this experience was meaningful because it helped me untie my worth from my academic performance and acted as a turning point that led me to explore faith, values, and a relationship with God.
 
 Regardless, I hope you find this draft encouraging in that it explains how your identity is not rooted in the external: grades, credentials, accomplishments, etc. It’s rooted in relationship, a relationship with God. A God who persists from beginning to end, who is unchanging. And thus, our identity, in Him is stable. Steadfast.
 
