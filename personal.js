@@ -6,6 +6,14 @@ const closeBtn = document.querySelector(".close");
 //GALLERY FOR ARRAY (LAZY LOADING?)
 const gallery = [
     {
+        image: "images/260715_founder.JPG",
+        caption: "2-in-1 nap and work. Is this heaven?",
+        date: "2026-07-15",
+        location: "Elm Hall",
+        tags: ["growth"],
+        hidden: false,
+    }, 
+    {
         image: "images/260623_macbook.JPG",
         caption: "Wow. I guess people can really change.",
         date: "2026-06-23",
