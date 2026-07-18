@@ -6,10 +6,18 @@ const closeBtn = document.querySelector(".close");
 //GALLERY FOR ARRAY (LAZY LOADING?)
 const gallery = [
     {
+        image: "images/260717_brother.JPG",
+        caption: "",
+        date: "2026-07-17",
+        location: "Home",
+        tags: ["growth"],
+        hidden: false,
+    }, 
+    {
         image: "images/260715_founder.JPG",
         caption: "2-in-1 nap and work. Is this heaven?",
         date: "2026-07-15",
-        location: "Elm Hall",
+        location: "Georgia Tech - CreateX",
         tags: ["growth"],
         hidden: false,
     }, 
