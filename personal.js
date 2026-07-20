@@ -201,14 +201,6 @@ const gallery = [
         tags: ["friends"],
         hidden: false,
     },
-    /*{
-        image: "images/260118_aldigang.JPG",
-        caption: "Aldi Gang",
-        date: "2026-01-18",
-        location: "Aldi",
-        tags: ["friends"],
-        hidden: false,
-    },
     {
         image: "images/251027_museum.jpg",
         caption: "",
@@ -217,6 +209,15 @@ const gallery = [
         tags: ["places"],
         hidden: false,
     },
+    /*{
+        image: "images/260118_aldigang.JPG",
+        caption: "Aldi Gang",
+        date: "2026-01-18",
+        location: "Aldi",
+        tags: ["friends"],
+        hidden: false,
+    },
+    
     {
         image: "images/250405_eye.jpg",
         caption: "Anna's EYE!",
