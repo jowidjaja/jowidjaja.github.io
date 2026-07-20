@@ -2,7 +2,7 @@
 title: Lessons Learned
 date: 2026-07-19T12:00:00Z
 category: Reflection
-thumbnail: images/260719_rainbow.jpg
+thumbnail: images/260719_rainbow.JPG
 tags:
   - growth
   - random thoughts
