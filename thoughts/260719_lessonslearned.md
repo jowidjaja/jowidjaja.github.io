@@ -8,7 +8,7 @@ tags:
   - random thoughts
 published: true
 ---
-There are no analogies in thie piece. Just a simple statement of what has come to pass. I've learned that there are people who come into your life and fundamentally change it. They awaken parts of yourself that were once lost. And with it, the challenges that come with knowing how to reconstruct your identity to incorporate those pieces.
+There are no analogies in this piece. Just a simple statement of what has come to pass. I've learned that there are people who come into your life and fundamentally change it. They awaken parts of yourself that were once lost. And with it, the challenges that come with knowing how to reconstruct your identity to incorporate those pieces.
 
 Now that I've claimed these parts for myself, for the first time in two years, the recurrent, ever-persistent thoughts of this individual has finally begun to loosen its grip.
 
